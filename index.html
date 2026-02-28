@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vera Studio</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg">
+
+    <!-- Inter + Ballet fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header class="hero">
+
+        <!-- Navbar de Bootstrap -->
+        <nav class="navbar navbar-expand-md nav">
+            <div class="container-fluid px-0">
+
+                <a class="navbar-brand nav-logo-link" href="./">
+                    <img src="./assets/logo.svg" alt="Vera Studio" class="nav-logo">
+                </a>
+
+                <button class="navbar-toggler nav-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto align-items-center gap-2">
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link nav-link-custom">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link nav-link-custom">Our Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link nav-link-custom">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#faq" class="nav-link nav-link-custom">Process</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link nav-link-custom nav-cta-filled">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="hero-background">
+            <ul class="hero-services">
+                <li class="hero-services-item">Software</li>
+                <li class="hero-services-item">Web Design</li>
+                <li class="hero-services-item">Mobile Development</li>
+            </ul>
+
+            <section class="hero-main">
+                <h1 class="hero-title">
+                    <span class="hero-title-vera">VERA</span>
+                    <span class="hero-title-studio"><span class="hero-title--ballet">S</span>TUDIO</span>
+                </h1>
+            </section>
+        </div>
+
+    </header>
+
+
+    <main class="main">
+
+        <section class="services" id="services">
+            <h2 class="title">We build <span class="title-highlight">digital experiences</span> people actually want to use.</h2>
+            <p class="paragraph">Vera Studio is a creative software development studio crafting bold, user-focused digital experiences. We blend strategy, design, and innovation to help brands stand out and grow through web, mobile, and custom technology solutions.</p>
+
+            <div class="row g-4 mt-3">
+
+                <div class="col-12 col-md-4">
+                    <article class="services-article service-card--gray">
+                        <div class="service-card-top">
+                            <span class="service-number">01</span>
+                            <h3 class="service-title">Web Design &amp; Development</h3>
+                            <p class="service-description">We build modern websites that feel premium and perform: landing pages, full marketing sites, portfolio sites, e-commerce, and custom builds.</p>
+                        </div>
+                        <div class="service-content">
+                            <img src="./assets/1.png" class="service-img" alt="Web Design">
+                            <a href="#contact" class="service-link">
+                                <img src="./assets/arrow.svg" class="service-arrow" alt="arrow">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <article class="services-article service-card--dark">
+                        <div class="service-card-top">
+                            <span class="service-number">02</span>
+                            <h3 class="service-title">Mobile App Design</h3>
+                            <p class="service-description">We craft mobile apps that are fast, intuitive, and brand-aligned,then build them with a clean architecture so you can grow.</p>
+                        </div>
+                        <div class="service-content">
+                            <img src="./assets/2.png" class="service-img" alt="Mobile App">
+                            <a href="#contact" class="service-link">
+                                <img src="./assets/arrow.svg" class="service-arrow service-arrow--invert" alt="arrow">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <article class="services-article service-card--gray">
+                        <div class="service-card-top">
+                            <span class="service-number">03</span>
+                            <h3 class="service-title">Software Implementation</h3>
+                            <p class="service-description">If your business runs on spreadsheets, DMs, and manual work, this is where you win. We build internal tools, portals, admin dashboards, automations, and integrations.</p>
+                        </div>
+                        <div class="service-content">
+                            <img src="./assets/4.png" class="service-img" alt="Software">
+                            <a href="#contact" class="service-link">
+                                <img src="./assets/arrow.svg" class="service-arrow" alt="arrow">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="projects" id="projects">
+            <h2 class="title">Our Work</h2>
+            <p class="paragraph">A look at some of the projects we have built for our clients.</p>
+
+            <div id="projectsCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+
+                <div class="carousel-inner project-carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="project-card">
+                            <div class="project-img-wrap">
+                                <img src="./assets/carousel1.png" class="project-img" alt="Marketing Website Redesign">
+                            </div>
+                            <div class="project-info">
+                                <span class="project-tag">Web Design</span>
+                                <h3 class="project-title">Marketing Website Redesign</h3>
+                                <p class="project-desc">A full redesign of a B2B marketing site — faster load times, clearer messaging, and a 40% lift in conversions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <div class="project-img-wrap">
+                                <img src="./assets/carousel2.webp" class="project-img" alt="Emotional Tracking App">
+                            </div>
+                            <div class="project-info">
+                                <span class="project-tag">Mobile App</span>
+                                <h3 class="project-title">Emotional Tracking App</h3>
+                                <p class="project-desc">A mobile app that helps users log, understand, and reflect on their emotions through daily check-ins and visual insights.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <div class="project-img-wrap">
+                                <img src="./assets/carousel3.jpg" class="project-img" alt="Internal Operations Platform">
+                            </div>
+                            <div class="project-info">
+                                <span class="project-tag">Software</span>
+                                <h3 class="project-title">Internal Operations Platform</h3>
+                                <p class="project-desc">A custom dashboard replacing spreadsheets for a logistics company with 50+ users.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="project-nav">
+                    <div class="project-dots">
+                        <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active project-dot" aria-current="true" aria-label="Project 1"></button>
+                        <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" class="project-dot" aria-label="Project 2"></button>
+                        <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" class="project-dot" aria-label="Project 3"></button>
+                    </div>
+                    <div class="project-arrows">
+                        <button class="project-control" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                            <span class="project-control-icon">&#8592;</span>
+                        </button>
+                        <button class="project-control" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                            <span class="project-control-icon">&#8594;</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="cta" id="about">
+            <article class="cta-content">
+                <div class="cta-texts">
+                    <p class="cta-eyebrow">About us</p>
+                    <h2 class="title">We make things happen.</h2>
+                    <p class="paragraph">We are committed to creating digital experiences that capture the essence of your brand and attract your ideal audience. Bold thinking, clean execution.</p>
+                    <a href="#contact" class="cta-link">Get in Touch</a>
+                </div>
+                <figure class="cta-figure">
+                    <img src="./assets/3.png" class="cta-img" alt="About Vera Studio">
+                </figure>
+            </article>
+        </section>
+
+
+        <section class="faq" id="faq">
+            <h2 class="title">Our Process</h2>
+            <p class="paragraph">Four clear steps from first conversation to final launch.</p>
+
+            <section class="faq-container">
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>
+                            <span class="faq-step-label">Step 1</span>
+                            Discover
+                        </span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <article class="faq-answer">
+                        <p>We get context, goals, constraints, and success metrics. We map the user journey and identify what matters most.</p>
+                        <p class="faq-deliverables">Deliverables: project scope, structure, timeline, priorities.</p>
+                    </article>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>
+                            <span class="faq-step-label">Step 2</span>
+                            Design
+                        </span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <article class="faq-answer">
+                        <p>We design the interface and interactions, iterate quickly, and align everything with your brand.</p>
+                        <p class="faq-deliverables">Deliverables: wireframes, UI screens, clickable prototype.</p>
+                    </article>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>
+                            <span class="faq-step-label">Step 3</span>
+                            Develop
+                        </span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <article class="faq-answer">
+                        <p>We build with clean code, performance, and scalability. Frontend + backend, integrations, and data flows if needed.</p>
+                        <p class="faq-deliverables">Deliverables: working product, staging link, QA checklist.</p>
+                    </article>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>
+                            <span class="faq-step-label">Step 4</span>
+                            Launch
+                        </span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <article class="faq-answer">
+                        <p>We deploy, track performance, and optimize.</p>
+                        <p class="faq-deliverables">Deliverables: live site/app, analytics, next-steps roadmap.</p>
+                    </article>
+                </details>
+
+            </section>
+        </section>
+
+
+        <section class="contact" id="contact">
+            <h2 class="title">Ready to build something people remember?</h2>
+            <p class="paragraph">Whether you need a website that converts, an app that users love, or software that removes daily friction, we’ll help you create something bold, clean, and effective.</p>
+
+            <section class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <label class="contact-label">
+                        Name
+                        <input type="text" placeholder="Your name" class="contact-input">
+                    </label>
+                    <label class="contact-label">
+                        Email
+                        <input type="email" placeholder="you@example.com" class="contact-input">
+                    </label>
+                    <label class="contact-label">
+                        Message
+                        <textarea placeholder="Tell us about your project..." class="contact-area"></textarea>
+                    </label>
+                    <input type="submit" value="Send Message" class="contact-submit">
+                </form>
+                <div class="form-success" id="contactSuccess">
+                    <p class="form-success-title">Message sent!</p>
+                    <p class="form-success-text">We got your message and will get back to you within 24 hours.</p>
+                </div>
+                <figure class="contact-figure">
+                    <img src="./assets/mail.png" alt="Contact" class="contact-img">
+                </figure>
+            </section>
+        </section>
+
+    </main>
+
+
+
+<footer class="footer">
+    <div class="footer-content">
+
+        <div class="row g-5 footer-main">
+
+            <div class="col-12 col-md-4">
+                <a href="./" class="footer-logo-link">
+                    <img src="./assets/logo-white.svg" alt="Vera Studio" class="footer-logo">
+                </a>
+                <p class="footer-tagline mt-3">Crafting bold digital experiences for forward-thinking brands.</p>
+            </div>
+
+            <div class="col-6 col-md-2">
+                <h5 class="footer-copy">Navigate</h5>
+                <nav class="footer-links">
+                    <a href="#services" class="footer-link">Services</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#our-process" class="footer-link">Our Process</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </nav>
+            </div>
+
+            <div class="col-6 col-md-2">
+                <h5 class="footer-copy">Contact</h5>
+                <address class="footer-info-block">
+                    <p class="footer-info">hola@verastudio.com</p>
+                    <p class="footer-info">+52 (999) 358-5454</p>
+                    <p class="footer-info">Km 15.5 Carr. Mérida, Yucatán, Mexico</p>
+                </address>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <h5 class="footer-copy">Stay in the loop</h5>
+                <form class="footer-newsletter" id="newsletterForm">
+                    <input type="email" placeholder="Your email address" class="footer-email" id="newsletterEmail">
+                    <input type="submit" value="Subscribe" class="footer-submit">
+                </form>
+                <p class="footer-newsletter-success" id="newsletterSuccess" style="display:none; color: #7ab8f5; font-size: 0.9rem; margin-top: 0.5rem;"> You're subscribed!</p>
+            </div>
+
+        </div>
+
+        <section class="footer-copyright">
+            <p class="footer-copyright-text">&copy; 2026 Vera Studio &mdash; All rights reserved.</p>
+        </section>
+
+    </div>
+</footer>
+
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var btn = this.querySelector('.contact-submit');
+        btn.value = 'Sent ';
+        btn.style.backgroundColor = '#111111';
+        btn.disabled = true;
+    });
+
+    document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        this.style.display = 'none';
+        document.getElementById('newsletterSuccess').style.display = 'block';
+    });
+
+    // Cierra el menu en mobile al hacer click en cualquier link
+    document.querySelectorAll('#navbarMenu .nav-link').forEach(function(link) {
+        link.addEventListener('click', function() {
+            var menu = document.getElementById('navbarMenu');
+            var bsCollapse = bootstrap.Collapse.getInstance(menu);
+            if (bsCollapse) bsCollapse.hide();
+        });
+    });
+</script>
+
+</body>
+</html>
