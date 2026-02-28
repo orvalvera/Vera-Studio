@@ -6,23 +6,26 @@
     <title>Vera Studio</title>
     <link rel="icon" type="image/svg+xml" href="./assets/logo.svg">
 
-    <!-- Inter + Ballet fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
 <div class="container">
 
+    <!-- HEADER -->
     <header class="hero">
 
-        <!-- Navbar de Bootstrap -->
+        <!--  MENU  -->
         <nav class="navbar navbar-expand-md nav">
             <div class="container-fluid px-0">
 
@@ -77,6 +80,7 @@
 
     <main class="main">
 
+        <!-- SERVICIOS -->
         <section class="services" id="services">
             <h2 class="title">We build <span class="title-highlight">digital experiences</span> people actually want to use.</h2>
             <p class="paragraph">Vera Studio is a creative software development studio crafting bold, user-focused digital experiences. We blend strategy, design, and innovation to help brands stand out and grow through web, mobile, and custom technology solutions.</p>
@@ -135,6 +139,7 @@
         </section>
 
 
+        <!-- PROYECTOS -->
         <section class="projects" id="projects">
             <h2 class="title">Our Work</h2>
             <p class="paragraph">A look at some of the projects we have built for our clients.</p>
@@ -204,6 +209,7 @@
         </section>
 
 
+        <!-- ABOUT -->
         <section class="cta" id="about">
             <article class="cta-content">
                 <div class="cta-texts">
@@ -219,6 +225,7 @@
         </section>
 
 
+        <!-- PROCESO -->
         <section class="faq" id="faq">
             <h2 class="title">Our Process</h2>
             <p class="paragraph">Four clear steps from first conversation to final launch.</p>
@@ -285,6 +292,7 @@
         </section>
 
 
+        <!-- CONTACTO -->
         <section class="contact" id="contact">
             <h2 class="title">Ready to build something people remember?</h2>
             <p class="paragraph">Whether you need a website that converts, an app that users love, or software that removes daily friction, we’ll help you create something bold, clean, and effective.</p>
@@ -305,10 +313,6 @@
                     </label>
                     <input type="submit" value="Send Message" class="contact-submit">
                 </form>
-                <div class="form-success" id="contactSuccess">
-                    <p class="form-success-title">Message sent!</p>
-                    <p class="form-success-text">We got your message and will get back to you within 24 hours.</p>
-                </div>
                 <figure class="contact-figure">
                     <img src="./assets/mail.png" alt="Contact" class="contact-img">
                 </figure>
@@ -319,6 +323,7 @@
 
 
 
+<!-- FOOTER -->
 <footer class="footer">
     <div class="footer-content">
 
@@ -335,8 +340,9 @@
                 <h5 class="footer-copy">Navigate</h5>
                 <nav class="footer-links">
                     <a href="#services" class="footer-link">Services</a>
+                    <a href="#projects" class="footer-link">Our Work</a>
                     <a href="#about" class="footer-link">About</a>
-                    <a href="#our-process" class="footer-link">Our Process</a>
+                    <a href="#faq" class="footer-link">Our Process</a>
                     <a href="#contact" class="footer-link">Contact</a>
                 </nav>
             </div>
@@ -373,14 +379,12 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+<!-- Programacion JS -->
 <script>
     document.getElementById('contactForm').addEventListener('submit', function(e) {
         e.preventDefault();
         var btn = this.querySelector('.contact-submit');
-        btn.value = 'Sent ';
-        btn.style.backgroundColor = '#111111';
+        btn.value = 'Sent';
         btn.disabled = true;
     });
 
@@ -390,7 +394,7 @@
         document.getElementById('newsletterSuccess').style.display = 'block';
     });
 
-    // Cierra el menu en mobile al hacer click en cualquier link
+    // Cerrar el menu en mobile al dar click en un link
     document.querySelectorAll('#navbarMenu .nav-link').forEach(function(link) {
         link.addEventListener('click', function() {
             var menu = document.getElementById('navbarMenu');

@@ -1,4 +1,4 @@
-# Vera Studio — Sitio Web
+# Vera Studio 
 
 ## Tecnologías utilizadas
 
