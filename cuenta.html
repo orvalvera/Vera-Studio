@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cuenta de cliente de Vera Studio para consultar proyectos activos, avance y estado actual."
+    />
+    <title>Cuenta | Vera Studio</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&amp;family=Inter:opsz,wght@14..32,300..800&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="account-header">
+        <nav
+          class="navbar navbar-expand-lg nav"
+          aria-label="Navegación principal"
+        >
+          <div class="container-fluid nav-container">
+            <a
+              class="navbar-brand nav-logo-link"
+              href="./index.html#inicio"
+              aria-label="Inicio Vera Studio"
+            >
+              <img src="./assets/logo.svg" alt="Vera Studio" class="nav-logo" />
+            </a>
+
+            <button
+              class="navbar-toggler nav-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarMenu"
+              aria-controls="navbarMenu"
+              aria-expanded="false"
+              aria-label="Abrir menú"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse nav-menu" id="navbarMenu">
+              <ul class="navbar-nav ms-lg-auto align-items-lg-center nav-list">
+                <li class="nav-item">
+                  <a
+                    href="./index.html#services"
+                    class="nav-link nav-link-custom"
+                    >Servicios</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="./index.html#projects"
+                    class="nav-link nav-link-custom"
+                    >Proyectos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="./index.html#about" class="nav-link nav-link-custom"
+                    >Nosotros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="./index.html#process"
+                    class="nav-link nav-link-custom"
+                    >Proceso</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="./cuenta.html"
+                    class="nav-link nav-link-custom nav-link-active"
+                    >Cuenta</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="./index.html#contact"
+                    class="nav-link nav-link-custom nav-cta-filled"
+                    >Solicitar proyecto</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main account-main">
+        <section class="account section" id="cuenta">
+          <div class="section-heading">
+            <span class="section-kicker">Cuenta</span>
+            <h1 class="title">Accede a tu proyecto.</h1>
+            <p class="paragraph">
+              Inicia sesión o crea una cuenta con el mismo correo que usaste
+              para contratar nuestros servicios. Si tu proyecto ya está
+              registrado, aquí podrás consultar su etapa, avance y próximos
+              pasos.
+            </p>
+          </div>
+
+          <section class="account-content" aria-label="Cuenta de cliente">
+            <article class="account-auth">
+              <div class="auth-tabs" role="tablist" aria-label="Acceso">
+                <button class="auth-tab is-active" type="button" id="loginTab">
+                  Iniciar sesión
+                </button>
+                <button class="auth-tab" type="button" id="registerTab">
+                  Registrarme
+                </button>
+              </div>
+
+              <form class="auth-form" id="loginForm" novalidate>
+                <label class="contact-label">
+                  Email
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="cliente@email.com"
+                    class="contact-input"
+                    required
+                  />
+                </label>
+
+                <label class="contact-label">
+                  Contraseña
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Tu contraseña"
+                    class="contact-input"
+                    required
+                  />
+                </label>
+
+                <button type="submit" class="contact-submit">Entrar</button>
+              </form>
+
+              <form class="auth-form is-hidden" id="registerForm" novalidate>
+                <label class="contact-label">
+                  Nombre
+                  <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Tu nombre"
+                    class="contact-input"
+                    required
+                  />
+                </label>
+
+                <label class="contact-label">
+                  Email
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="cliente@email.com"
+                    class="contact-input"
+                    required
+                  />
+                </label>
+
+                <label class="contact-label">
+                  Contraseña
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Mínimo 6 caracteres"
+                    class="contact-input"
+                    minlength="6"
+                    required
+                  />
+                </label>
+
+                <button type="submit" class="contact-submit">
+                  Crear cuenta
+                </button>
+              </form>
+
+              <p
+                class="form-message"
+                id="authMessage"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </article>
+
+            <article class="account-panel" id="accountPanel">
+              <p class="account-empty">
+                Ingresa con tu cuenta para consultar tus proyectos activos.
+              </p>
+            </article>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/cuenta.js"></script>
+  </body>
+</html>
