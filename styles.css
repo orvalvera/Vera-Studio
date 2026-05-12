@@ -85,7 +85,7 @@ a {
 
 .title {
     max-width: 920px;
-    font-size: clamp(2.15rem, 5vw, 4.75rem);
+    font-size: clamp(1.86rem, 3.7vw, 3.55rem);
     font-weight: 760;
     letter-spacing: 0;
     line-height: 1.02;
@@ -93,9 +93,9 @@ a {
 
 .paragraph {
     max-width: 780px;
-    margin-top: 1.25rem;
+    margin-top: 1.1rem;
     color: var(--muted-color);
-    font-size: clamp(1rem, 1.6vw, 1.2rem);
+    font-size: clamp(0.92rem, 1.18vw, 0.97rem);
     line-height: 1.75;
 }
 
@@ -278,7 +278,7 @@ a {
 }
 
 .services-article {
-    min-height: 500px;
+    min-height: 480px;
     height: 100%;
     padding: clamp(1.35rem, 3vw, 2rem);
     border: 1px solid var(--line-color);
@@ -325,7 +325,7 @@ a {
 }
 
 .service-title {
-    font-size: clamp(1.45rem, 2.5vw, 1.9rem);
+    font-size: clamp(1.18rem, 1.72vw, 1.38rem);
     font-weight: 760;
     letter-spacing: 0;
     line-height: 1.08;
@@ -333,7 +333,7 @@ a {
 
 .service-description {
     color: var(--muted-color);
-    font-size: 0.98rem;
+    font-size: 0.92rem;
     line-height: 1.65;
 }
 
@@ -411,7 +411,7 @@ a {
 
 .project-img-wrap {
     width: 100%;
-    height: clamp(230px, 38vw, 390px);
+    height: clamp(220px, 35vw, 360px);
     overflow: hidden;
     background-color: var(--primary-color);
 }
@@ -441,7 +441,7 @@ a {
 
 .project-title {
     color: var(--primary-color);
-    font-size: clamp(1.35rem, 2vw, 1.7rem);
+    font-size: clamp(1.16rem, 1.52vw, 1.34rem);
     font-weight: 760;
     letter-spacing: 0;
 }
@@ -449,7 +449,7 @@ a {
 .project-desc {
     max-width: 760px;
     color: var(--muted-color);
-    font-size: 1rem;
+    font-size: 0.92rem;
     line-height: 1.65;
 }
 
@@ -507,7 +507,7 @@ a {
 .about-texts .paragraph {
     max-width: 640px;
     color: rgba(255, 255, 255, 0.72);
-    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    font-size: clamp(0.96rem, 1.36vw, 1.02rem);
 }
 
 .about-link {
@@ -586,7 +586,7 @@ a {
     gap: 1rem;
     cursor: pointer;
     list-style: none;
-    font-size: clamp(1.05rem, 2vw, 1.28rem);
+    font-size: clamp(0.94rem, 1.52vw, 1.02rem);
     font-weight: 760;
     user-select: none;
 }
@@ -633,7 +633,8 @@ a {
     padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.18);
     color: rgba(255, 255, 255, 0.74);
-    line-height: 1.7;
+    font-size: 0.93rem;
+    line-height: 1.68;
 }
 
 .process-item:not([open]) .process-answer {
